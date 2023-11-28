@@ -23,21 +23,22 @@ namespace Pustok_Temp.Areas.Manage.Controllers
         }
         public async Task<IActionResult> Index()
         {
-            List<Book> books = await _context.books
+/*            List<Book> books = await _context.books
                 .Include(p => p.Authors)
                 .Include(p=>p.Bookimages).
-                ToListAsync();
+                ToListAsync();*/
 
-            return View(books);
+            return View();
          
         }
         public IActionResult Create()
         {
 
-            ViewBag.authors = _context.authors.ToList(); 
+            ViewBag.authors = _context.authors.ToList();
+            ViewBag.tags = _context.tags.ToList();
             return View();
 
-        }
+        }   
 
         [HttpPost]
         public async Task<IActionResult> Create(Book book)
@@ -57,6 +58,8 @@ namespace Pustok_Temp.Areas.Manage.Controllers
             book.ImgUrl = book.ImageFile.Upload(_environment.WebRootPath, @"\Upload\BookImage\");
 
             ViewBag.authors = await _context.authors.ToListAsync();
+            ViewBag.tags = await _context.tags.ToListAsync();
+
             if (!ModelState.IsValid)
             {
                 return View();

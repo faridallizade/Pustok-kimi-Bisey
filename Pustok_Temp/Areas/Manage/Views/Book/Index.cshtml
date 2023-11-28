@@ -1,5 +1,7 @@
-﻿@using Pustok_Temp.Models;
-@model List<Book>
+﻿@using Pustok_Temp.Areas.Manage.ViewModels.Book;
+@using Pustok_Temp.Models;
+@using Pustok_Temp.ViewModels;
+@model HomeVM
 @{
     int count = 0;
 }
@@ -18,10 +20,11 @@
                 <th scope="col">Price</th>
                 <th scope="col">Authors Name</th>
                 <th scope="col">Image</th>
+                <th scope="col">Tags</th>
             </tr>
         </thead>
         <tbody>
-            @foreach (var item in Model)
+            @foreach (var item in Model.books)
             {
                 count++;
                 <tr>
@@ -29,13 +32,18 @@
 
                     <td>@item.Title</td>
                     <td>@item.Price</td>
-                    <td>@item.Authors.Name</td> 
 
 
                     <td>
                         <div style="width:100px">
                             <img width="100%" src="~/Upload/BookImage/@item.ImgUrl">
                         </div>
+                    </td>
+                    <td>
+                        @foreach (var tg in item.Booktags)
+                        {
+                            <a href="#">@tg.tags.Name</a>
+                        }
                     </td>
                     <td>
                         <a class="btn btn-secondary" asp-controller="Book" asp-action="Update" asp-route-id="@item.Id">Update</a>

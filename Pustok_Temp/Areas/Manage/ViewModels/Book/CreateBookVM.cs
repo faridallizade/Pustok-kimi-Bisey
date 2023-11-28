@@ -2,6 +2,7 @@
 using System.ComponentModel.DataAnnotations;
 using System.Diagnostics.Contracts;
 using Pustok_Temp.Models;
+using Microsoft.AspNetCore.Identity;
 
 namespace Pustok_Temp.Areas.Manage.ViewModels.Book
 {
@@ -18,6 +19,8 @@ namespace Pustok_Temp.Areas.Manage.ViewModels.Book
         public int? AuthorId { get; set; }
         public Author? author { get; set; }
         public IFormFile? ImageFile { get; set; }
+        public List<int> tagIds { get; set; }
+  
 
     }
 }

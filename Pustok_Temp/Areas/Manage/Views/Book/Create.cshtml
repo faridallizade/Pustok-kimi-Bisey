@@ -21,13 +21,10 @@
                 </select>
             </div>
             <div>
-
-            <select class="form-select" >
-                <label >Tags</label>
-                <option selected>Select Tags</option>
-                <option></option>
-            </select>
-
+                <label>Tags</label>
+                <select class="form-select" multiple aria-label="multiple select example" asp-items="new SelectList(ViewBag.tags,nameof(Tags.id),nameof(Tags.Name))">
+                    <option selected>Select Tags</option>
+                </select>
             </div>
 
             @*<div class="mb-3 col-md-3">

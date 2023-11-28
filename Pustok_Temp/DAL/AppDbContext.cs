@@ -16,7 +16,8 @@ namespace Pustok_Temp.DAL
         public DbSet<Book_Img> bookimages { get; set; }
         public DbSet<Categories> categories { get; set; }
         public DbSet<Slider> sliders { get; set; }
-
+        public DbSet<Tags> tags { get; set; }
+        public DbSet<BookTags> BookTags { get; set; }
         public DbSet<ParentCategory> parentcats { get; set; }
 
 

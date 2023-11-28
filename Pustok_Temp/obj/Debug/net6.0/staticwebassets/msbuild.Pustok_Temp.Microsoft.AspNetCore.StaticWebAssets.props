@@ -13968,6 +13968,38 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Upload\BookImage\89c1f343-5d57-4a55-9617-f33bbaf14329bask.jpg))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Upload\BookImage\c9252845-2d7f-4f28-b5bc-4bc04393e1fealinino.png))">
+      <SourceType>Package</SourceType>
+      <SourceId>Pustok_Temp</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/Pustok_Temp</BasePath>
+      <RelativePath>Upload/BookImage/c9252845-2d7f-4f28-b5bc-4bc04393e1fealinino.png</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Upload\BookImage\c9252845-2d7f-4f28-b5bc-4bc04393e1fealinino.png))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Upload\BookImage\cc3a09bb-d145-4c6b-85a1-ff4d0a60d55balinino.png))">
+      <SourceType>Package</SourceType>
+      <SourceId>Pustok_Temp</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/Pustok_Temp</BasePath>
+      <RelativePath>Upload/BookImage/cc3a09bb-d145-4c6b-85a1-ff4d0a60d55balinino.png</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Upload\BookImage\cc3a09bb-d145-4c6b-85a1-ff4d0a60d55balinino.png))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Upload\BookImage\d60c647b-51ac-4202-92b1-93e848661f98bask.jpg))">
       <SourceType>Package</SourceType>
       <SourceId>Pustok_Temp</SourceId>
@@ -14031,6 +14063,22 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Upload\BookImage\e9eda980-d787-4c96-ac5b-5752cfffb270bask.jpg))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Upload\BookImage\f5d8e5e4-b9aa-453d-9ce0-dccbeaf18e99alinino.png))">
+      <SourceType>Package</SourceType>
+      <SourceId>Pustok_Temp</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/Pustok_Temp</BasePath>
+      <RelativePath>Upload/BookImage/f5d8e5e4-b9aa-453d-9ce0-dccbeaf18e99alinino.png</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Upload\BookImage\f5d8e5e4-b9aa-453d-9ce0-dccbeaf18e99alinino.png))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Upload\BookImage\fbfb6784-b91e-4775-b61c-c03eb774fd60alinino.png))">
       <SourceType>Package</SourceType>
