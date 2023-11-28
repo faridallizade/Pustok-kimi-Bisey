@@ -1,0 +1,48 @@
+﻿@using Pustok_Temp.Areas.Manage.ViewModels.Book;
+@using Pustok_Temp.Models;
+@model CreateBookVM;
+<div class="container">
+    <form method="post" enctype="multipart/form-data">
+        <div class="row">
+            <div class="mb-3 col-md-3">
+                <label asp-for="Title" class="form-label">Title</label>
+                <input asp-for="Title" class="form-control">
+                <span asp-validation-for="Title" style="color:red"></span>
+            </div>
+            <div class="mb-3 col-md-3">
+                <label asp-for="Price" class="form-label">Price</label>
+                <input asp-for="Price" class="form-control">
+                <span asp-validation-for="Price" style="color:red"></span>
+            </div>
+            <div>
+                <label asp-for="AuthorId">Authors</label>
+                <select class="form-select" asp-for="AuthorId" asp-items="new SelectList(ViewBag.authors,nameof(Author.Id),nameof(Author.Name))">
+                    <option selected>Select Author</option>
+                </select>
+            </div>
+            <div>
+
+            <select class="form-select" >
+                <label >Tags</label>
+                <option selected>Select Tags</option>
+                <option></option>
+            </select>
+
+            </div>
+
+            @*<div class="mb-3 col-md-3">
+            <label asp-for="author.Name" class="form-label">Authors Name</label>
+            <input asp-for="author.Name" class="form-control">
+            <span asp-validation-for="author.Name" style="color:red"></span>
+            </div> *@
+
+            <div class="mb-3 col-md-3">
+                <label asp-for="ImageFile" class="form-label">Image File</label>
+                <input asp-for="ImageFile" class=" form-control">
+                <span asp-validation-for="ImageFile" style="color:red"></span>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </div>
+    </form>
+</div>
