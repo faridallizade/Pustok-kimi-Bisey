@@ -18,13 +18,13 @@
                                     categories
                                 </a>
                                 <ul class="category-menu">
-                                     @foreach (var itemP in Model.categories.FindAll(c => c.ParentCategoryId == null))
+                                     @foreach (var itemP in Model.Categories.FindAll(c => c.ParentCategoryId == null))
                                     {
 
                                         <li class="cat-item has-children">
                                             <a href="#">@itemP.Name</a>
                                             <ul class="sub-menu">
-                                                @foreach (var item in Model.categories.FindAll(c => c.ParentCategoryId == itemP.Id))
+                                                @foreach (var item in Model.Categories.FindAll(c => c.ParentCategoryId == itemP.Id))
                                                 {
                                                     <li><a href="#">item.</a></li>
 
@@ -487,7 +487,7 @@
                             "dots":true
                             }'>
             <div class="single-slide bg-shade-whisper  ">
-                @foreach (var item in Model.sliders)
+                @foreach (var item in Model.Sliders)
                 {
 
                     <div class="container">
@@ -499,11 +499,11 @@
                                 <div class="col-xl-6 col-md-6 col-sm-7">
                                     <div class="home-content-inner content-left-side">
                                         <h1>
-                                            @item.title
+                                            @item.Title
                                         </h1>
-                                        <h2>@item.description</h2>
+                                        <h2>@item.Description</h2>
                                         <a href="shop-grid.html" class="btn btn-outlined--primary">
-                                            $@item.price - Order Now!
+                                            $@item.Price - Order Now!
                                         </a>
                                     </div>
                                 </div>
@@ -633,7 +633,7 @@
                             {"breakpoint":480, "settings": {"slidesToShow": 1} },
                             {"breakpoint":320, "settings": {"slidesToShow": 1} }
                         ]'>
-                            @foreach (var item in Model.books)
+                            @foreach (var item in Model.Books)
                             {
                                 <div class="single-slide">
                                     <div class="product-card">

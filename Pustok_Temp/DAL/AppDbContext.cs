@@ -11,14 +11,14 @@ namespace Pustok_Temp.DAL
         {
 
         }
-        public DbSet<Author> authors { get; set; }
-        public DbSet<Book> books { get; set; }
-        public DbSet<Book_Img> bookimages { get; set; }
-        public DbSet<Categories> categories { get; set; }
-        public DbSet<Slider> sliders { get; set; }
-        public DbSet<Tags> tags { get; set; }
-        public DbSet<BookTags> BookTags { get; set; }
-        public DbSet<ParentCategory> parentcats { get; set; }
+        public DbSet<Author> Authors { get; set; }
+        public DbSet<Book> Books { get; set; }
+        public DbSet<BookImg> Bookimages { get; set; }
+        public DbSet<Category> Categories { get; set; }
+        public DbSet<Slider> Sliders { get; set; }
+        public DbSet<Tag> Tags { get; set; }
+        public DbSet<BookTag> BookTags { get; set; }
+        public DbSet<ParentCategory> ParentCategories{ get; set; }
 
 
     }

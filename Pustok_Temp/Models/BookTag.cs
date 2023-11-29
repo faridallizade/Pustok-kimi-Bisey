@@ -1,12 +1,12 @@
 ﻿namespace Pustok_Temp.Models
 {
-    public class BookTags
+    public class BookTag
     {
         public int Id { get; set; }
         public int TagId { get; set; }
-        public Tags tags { get; set; }
+        public Tag Tag { get; set; }
         public int BookId { get; set; }
-        public Book book { get; set; }
+        public Book Book { get; set; }
 
     }
 }

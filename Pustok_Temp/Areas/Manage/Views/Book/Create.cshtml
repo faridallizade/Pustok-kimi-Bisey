@@ -22,7 +22,7 @@
             </div>
             <div>
                 <label>Tags</label>
-                <select class="form-select" multiple aria-label="multiple select example" asp-items="new SelectList(ViewBag.tags,nameof(Tags.id),nameof(Tags.Name))">
+                <select asp-for="TagIds" class="form-select" aria-label="multiple select example" asp-items="new SelectList(ViewBag.tags,nameof(Tag.Id),nameof(Tag.Name))">
                     <option selected>Select Tags</option>
                 </select>
             </div>

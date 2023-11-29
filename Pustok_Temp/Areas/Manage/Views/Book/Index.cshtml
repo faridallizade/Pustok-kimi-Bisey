@@ -1,7 +1,7 @@
 ﻿@using Pustok_Temp.Areas.Manage.ViewModels.Book;
 @using Pustok_Temp.Models;
 @using Pustok_Temp.ViewModels;
-@model HomeVM
+@model List<Book>
 @{
     int count = 0;
 }
@@ -24,15 +24,14 @@
             </tr>
         </thead>
         <tbody>
-            @foreach (var item in Model.books)
+            @foreach (var item in Model)
             {
                 count++;
                 <tr>
                     <th scope="row">@count</th>
-
                     <td>@item.Title</td>
                     <td>@item.Price</td>
-
+                    <td>@item.Authors.Name</td>
 
                     <td>
                         <div style="width:100px">
@@ -40,9 +39,9 @@
                         </div>
                     </td>
                     <td>
-                        @foreach (var tg in item.Booktags)
+                        @foreach (var tg in item.BookTags)
                         {
-                            <a href="#">@tg.tags.Name</a>
+                            <p>@tg.Tag.Name</p>
                         }
                     </td>
                     <td>

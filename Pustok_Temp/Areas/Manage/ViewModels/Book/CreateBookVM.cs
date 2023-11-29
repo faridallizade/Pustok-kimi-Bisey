@@ -19,7 +19,7 @@ namespace Pustok_Temp.Areas.Manage.ViewModels.Book
         public int? AuthorId { get; set; }
         public Author? author { get; set; }
         public IFormFile? ImageFile { get; set; }
-        public List<int> tagIds { get; set; }
+        public List<int> TagIds { get; set; }
   
 
     }

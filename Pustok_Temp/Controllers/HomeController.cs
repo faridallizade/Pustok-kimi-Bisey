@@ -16,11 +16,11 @@ namespace Pustok_Temp.Controllers
         {
             HomeVM homeVM = new HomeVM()
             {
-                authors = _context.authors.ToList(),
-                books = _context.books.ToList(),
-                books_img = _context.bookimages.ToList(),
-                categories = _context.categories.ToList(),
-                sliders = _context.sliders.ToList(),
+                Authors = _context.Authors.ToList(),
+                Books = _context.Books.ToList(),
+                BooksImg = _context.Bookimages.ToList(),
+                Categories = _context.Categories.ToList(),
+                Sliders = _context.Sliders.ToList(),
             };
             return View(homeVM);
         }

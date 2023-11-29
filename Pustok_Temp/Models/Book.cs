@@ -18,8 +18,8 @@ namespace Pustok_Temp.Models
         public double? Price { get; set; }
         public int? AuthorId { get; set; }
         public Author? Authors { get; set; }
-        public List<Book_Img>? Bookimages { get; set; }
-        public List<BookTags>? Booktags { get; set; }
+        public List<BookImg>? BookImages { get; set; }
+        public List<BookTag>? BookTags { get; set; }
 
     }
 }

@@ -17,9 +17,9 @@ namespace Pustok_Temp.Areas.Manage.Controllers
 
         public async Task<IActionResult> Index()
         {
-            List<Categories> categories = await _context.categories.Include(p => p.ParentCategory).ToListAsync();
+            List<Category> Categories = await _context.Categories.Include(p => p.ParentCategory).ToListAsync();
 
-            return View(categories);
+            return View(Categories);
         }
 
         public IActionResult Create()
@@ -31,14 +31,14 @@ namespace Pustok_Temp.Areas.Manage.Controllers
 
 
         [HttpPost]
-        public async Task<IActionResult> Create(Categories category)
+        public async Task<IActionResult> Create(Category category)
         {
             if (!ModelState.IsValid)
             {
                 return View();
             }
-            _context.categories.AddAsync(category);
-            _context.SaveChangesAsync();
+            await _context.Categories.AddAsync(category);
+            await _context.SaveChangesAsync();
 
             return RedirectToAction("Index");
 
@@ -47,19 +47,19 @@ namespace Pustok_Temp.Areas.Manage.Controllers
         public IActionResult Update(int id)
         {
 
-            Categories category = _context.categories.Find(id);
+            Category category = _context.Categories.Find(id);
             return View(category);
         }
 
         [HttpPost]
-        public IActionResult Update(Categories newcategory)
+        public IActionResult Update(Category newcategory)
         {
             if (!ModelState.IsValid)
             {
                 return View();
             }
 
-            Categories oldcategory = _context.categories.Find(newcategory.Id);
+            Category oldcategory = _context.Categories.Find(newcategory.Id);
             if (oldcategory == null)
             {
                 return View();
@@ -74,11 +74,11 @@ namespace Pustok_Temp.Areas.Manage.Controllers
         public async Task<IActionResult> Delete(int id)
         {
 
-            Categories category = _context.categories.Find(id);
+            Category category = _context.Categories.Find(id);
 
             if (category != null)
             {
-                _context.categories.Remove(category);
+                _context.Categories.Remove(category);
                 _context.SaveChanges();
 
             }
