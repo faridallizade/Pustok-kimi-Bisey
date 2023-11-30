@@ -26,17 +26,20 @@
                     <option selected>Select Tags</option>
                 </select>
             </div>
-
-            @*<div class="mb-3 col-md-3">
-            <label asp-for="author.Name" class="form-label">Authors Name</label>
-            <input asp-for="author.Name" class="form-control">
-            <span asp-validation-for="author.Name" style="color:red"></span>
-            </div> *@
-
-            <div class="mb-3 col-md-3">
-                <label asp-for="ImageFile" class="form-label">Image File</label>
-                <input asp-for="ImageFile" class=" form-control">
-                <span asp-validation-for="ImageFile" style="color:red"></span>
+            <div class="mb-3 col-md-3" style="padding:70px 10px">
+                <label asp-for="MainPhoto" class="form-label">Main Photo</label>
+                <input asp-for="MainPhoto" class=" form-control">
+                <span asp-validation-for="MainPhoto" style="color:red"></span>
+            </div>
+            <div class="mb-3 col-md-3" style="padding:70px 10px">
+                <label asp-for="HoverPhoto" class="form-label">Hover Photo</label>
+                <input asp-for="HoverPhoto" class=" form-control">
+                <span asp-validation-for="HoverPhoto" style="color:red"></span>
+            </div>
+            <div class="mb-3 col-md-3" style="padding:70px 10px">
+                <label asp-for="Photos" class="form-label">Image File</label>
+                <input asp-for="Photos" class=" form-control">
+                <span asp-validation-for="Photos" style="color:red"></span>
             </div>
 
             <button type="submit" class="btn btn-primary">Submit</button>

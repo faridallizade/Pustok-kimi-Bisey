@@ -7,6 +7,7 @@
         public Tag Tag { get; set; }
         public int BookId { get; set; }
         public Book Book { get; set; }
+        public bool? IsPrime { get; set; }
 
     }
 }
